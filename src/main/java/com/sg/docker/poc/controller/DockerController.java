@@ -9,16 +9,19 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class DockerController { 
 
-	String message = "SpringMVC";
-	
-	@RequestMapping(value = "/hello",method=RequestMethod.GET)
-	public ModelAndView showMessage(
+	@RequestMapping(value = "/addBday",method=RequestMethod.GET)
+	public ModelAndView addBday(
 			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
 		System.out.println("in controller");
  
 		ModelAndView mv = new ModelAndView("helloworld");
-		mv.addObject("message", message);
+		//mv.addObject("message", message);
 		mv.addObject("name", name);
 		return mv;
+	}
+	
+	@RequestMapping(value = "/addBday",method=RequestMethod.POST)
+	public String addBdayPost (@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
+		return null;
 	}
 }

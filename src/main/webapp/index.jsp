@@ -5,14 +5,16 @@ pageEncoding="ISO-8859-1"%>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Spring 4 MVC - HelloWorld Index Page</title>
+<title>Docker poc</title>
 </head>
 <body>
  
 	<center>
-		<h2>Hello World</h2>
+		<h2>Docker poc</h2>
 		<h3>
-			<a href="hello?name=Anoop">Click Here</a>
+			<a href="addBday">Add Birthday</a>
+			<br>
+			<a href="listBday">List Birthday</a>
 		</h3>
 	</center>
 </body>

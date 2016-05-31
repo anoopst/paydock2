@@ -14,7 +14,7 @@ pageEncoding="ISO-8859-1"%>
 		<h3>
 			<a href="addBday">Add Birthday</a>
 			<br>
-			<a href="listBday">List Birthday</a>
+			<a href="list">List Birthday</a>
 		</h3>
 	</center>
 </body>

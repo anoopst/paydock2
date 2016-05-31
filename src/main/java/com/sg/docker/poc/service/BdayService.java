@@ -19,9 +19,8 @@ public class BdayService implements IBdayService {
 	}
 
 	@Override
-	public List<BdayBean> listAll() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<BdayBean> listAll() {		
+		return dao.findAll();
 	}
 
 }

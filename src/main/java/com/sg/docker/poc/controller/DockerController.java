@@ -38,4 +38,12 @@ public class DockerController {
 	public String addBdayPost (@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
 		return null;
 	}
+	
+	@RequestMapping(value ="/list",method=RequestMethod.GET)
+	public ModelAndView list(){
+		ModelAndView mv = new ModelAndView("list");
+		mv.addObject("lists", bdayService.listAll());
+		
+		return mv;
+	}
 }

@@ -45,12 +45,14 @@ public class BdayBean {
 		this.name = name;
 	}
 
-	public Calendar getDob() {
+	public Calendar getDate() {
 		return date;
 	}
 
-	public void setDob(Calendar dob) {
-		this.date = dob;
+	public void setDate(Calendar date) {
+		this.date = date;
 	}
+	
+	
 
 }

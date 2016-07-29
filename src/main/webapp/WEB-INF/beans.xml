@@ -38,6 +38,7 @@ http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 	</bean>
 
 	<bean id="bdayService" class="com.sg.docker.poc.service.BdayService" />
+	<bean id="beneficiaryService" class="com.sg.docker.poc.service.BeneficiaryService" />
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

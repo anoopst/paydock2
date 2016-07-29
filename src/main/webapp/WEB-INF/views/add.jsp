@@ -65,31 +65,48 @@ li a:hover:not (.active ) {
 				<li><a href="<spring:url value="add"/>">Add Beneficiary</a></li>
 				<li><a href="<spring:url value="list"/>">List Beneficiary</a></li>
 			</ul>
-			<center>	
-		<div>
-<div>
-<h1 style="color: grey; font-family: Lucida Sans Unicode;">&nbsp;Beneficiary List</h1>
-</div>
-<div>
-<h4 style="color: #dc143c;">&nbsp;List of your local beneficiaries &nbsp;</h4>
-</div>
-<div>
-<table style="height: 21px;" width="644">
-<tbody>
-<tr style="background-color: #5a5a5a; color: white;">
-<td style="text-align: left;">NAME &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
-<td style="text-align: left;">ACCOUNT NUMBER</td>
-</tr>
-<tr style="background-color: white; color: black;">
-<td style="text-align: left;">&nbsp;</td>
-<td style="text-align: left;">&nbsp;</td>
-</tr>
-<c:forEach var="listValue" items="${lists}">
-			<tr><td>${listValue.name}</td><td>${listValue.accnum}</td></tr>
-		</c:forEach>
-</tbody>
-</table>
-</div>
-<p>&nbsp; &nbsp;</p>
-</body>
-</html>
+			<center>
+				<div>
+					<div>
+						<h1 style="color: grey; font-family: Lucida Sans Unicode;">Add
+							Beneficiary</h1>
+					</div>
+					<div>
+						<h4 style="color: #dc143c;">&nbsp;To create a new internal
+							beneficiary, please enter the relevant information in the
+							folllowing list&nbsp;&nbsp;&nbsp;</h4>
+					</div>
+					<div>
+						<table style="height: 21px;" width="644">
+							<tbody>
+								<tr style="background-color: #5a5a5a; color: white;">
+									<td>Beneficiary's account information</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<form:form method="post" action="add">
+						<p>
+							&nbsp; &nbsp; <span style="color: #808080;">NAME:</span>&nbsp;
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+							&nbsp; &nbsp;
+							<form:input path="name" />
+							<br /> <br />&nbsp; &nbsp; <span style="color: #808080;">ACCOUNT
+								NUMBER:</span>&nbsp;&nbsp;&nbsp;
+							<form:input path="accnum" />
+							<br /> <br />
+						</p>
+						<div style="text-align: center;">
+							<input style="color: white; background-color: #dc143c;"
+								type="submit" value="Submit" /> <input
+								style="color: black; background-color: #c8c8c8;" type="submit"
+								value="Cancel" />
+						</div>
+						<p>&nbsp;</p>
+						<hr />
+						<p>&nbsp;</p>
+					</form:form>
+				</div>
+			</center>
+		</body>
+		</html>

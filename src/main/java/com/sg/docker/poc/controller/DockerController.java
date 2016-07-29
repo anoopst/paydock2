@@ -5,7 +5,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.sg.docker.poc.bean.BdayBean;
@@ -41,7 +40,7 @@ public class DockerController {
 		return "/";
 	}
 	
-	@RequestMapping(value ="/list",method=RequestMethod.GET)
+	@RequestMapping(value ="/listb",method=RequestMethod.GET)
 	public ModelAndView list(){
 		ModelAndView mv = new ModelAndView("list");
 		mv.addObject("lists", bdayService.listAll());

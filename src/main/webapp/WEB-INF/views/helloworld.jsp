@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Spring 4 MVC -HelloWorld</title>
+<title>Add Beneficiary</title>
 </head>
 <body>
 	<center>

@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.sg.docker.poc</groupId>
-	<artifactId>dockerpoc</artifactId>
+	<groupId>com.sg.docker</groupId>
+	<artifactId>paydock</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>dockerpoc Maven Webapp</name>
+	<name>paydockMaven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<spring.version>4.1.6.RELEASE</spring.version>
@@ -14,7 +14,7 @@
 		<jstl.version>1.2</jstl.version>
 	</properties>
 	<build>
-		<finalName>dockerpoc</finalName>
+		<finalName>paydock</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>

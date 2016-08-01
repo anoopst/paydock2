@@ -1,11 +1,11 @@
-package com.sg.docker.poc.bean;
+package com.sg.docker.paydock.bean;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity(name = "dockerpoc.beneficiary")
-@Table(name = "dockerpoc.beneficiary")
+@Entity(name = "paydock.beneficiary")
+@Table(name = "paydock.beneficiary")
 public class BeneficiaryBean {
 
 	@Id

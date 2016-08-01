@@ -50,9 +50,9 @@ li a:hover:not(.active) {
 
 <ul>
   <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#ftransfer">Funds Transfer</a></li>
-  <li><a href="<spring:url value="add"/>">Add Beneficiary</a></li>
-  <li><a href="<spring:url value="list"/>">List Beneficiary</a></li>
+				  <li><a href="<spring:url value="transfer"/>">Funds Transfer</a></li>
+  				  <li><a href="<spring:url value="add"/>">Add Beneficiary</a></li>
+  				<li><a href="<spring:url value="list"/>">List Beneficiary</a></li>
 </ul>
 
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">

@@ -50,20 +50,41 @@ li a.active {
 	background-color: #dc143c;;
 	color: white;
 }
+li
+ 
+a
+:hover
+:not
+ 
+(
+.active
+ 
+)
+{
+background-color
+:
+ 
+#555
+;
 
-li a:hover:not (.active ) {
-	background-color: #555;
-	color: white;
+	
+color
+:
+ 
+white
+;
+
+
 }
 </style>
 		</head>
 		<body>
 
 			<ul>
-				<li><a class="active" href="#home">Home</a></li>
-				<li><a href="#ftransfer">Funds Transfer</a></li>
-				<li><a href="<spring:url value="add"/>">Add Beneficiary</a></li>
-				<li><a href="<spring:url value="list"/>">List Beneficiary</a></li>
+			  <li><a class="active" href="#home">Home</a></li>
+				  <li><a href="<spring:url value="transfer"/>">Funds Transfer</a></li>
+  				  <li><a href="<spring:url value="add"/>">Add Beneficiary</a></li>
+  				<li><a href="<spring:url value="list"/>">List Beneficiary</a></li>
 			</ul>
 			<center>
 				<div>

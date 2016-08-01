@@ -1,4 +1,4 @@
-package com.sg.docker.poc.model;
+package com.sg.docker.paydock.model;
 
 public class BeneficiaryModel {
 

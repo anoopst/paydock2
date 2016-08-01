@@ -1,4 +1,4 @@
-package com.sg.docker.poc.bean;
+package com.sg.docker.paydock.bean;
 
 public class LoginBean {
 

@@ -14,9 +14,9 @@ http://www.springframework.org/schema/data/jpa
 http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
 
-	<context:component-scan base-package="com.sg.docker.poc" />
+	<context:component-scan base-package="com.sg.docker.paydock" />
 	<context:property-placeholder location="classpath*:application.properties" />
-	<jpa:repositories base-package="com.sg.docker.poc" />
+	<jpa:repositories base-package="com.sg.docker.paydock" />
 	<mvc:annotation-driven />
 
 	<bean id="dataSource"
@@ -37,8 +37,7 @@ http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 		<property name="entityManagerFactory" ref="entityManagerFactory" />
 	</bean>
 
-	<bean id="bdayService" class="com.sg.docker.poc.service.BdayService" />
-	<bean id="beneficiaryService" class="com.sg.docker.poc.service.BeneficiaryService" />
+	<bean id="beneficiaryService" class="com.sg.docker.paydock.service.BeneficiaryService" />
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

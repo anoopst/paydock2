@@ -1,12 +1,12 @@
-package com.sg.docker.poc.service;
+package com.sg.docker.paydock.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sg.docker.poc.bean.BeneficiaryBean;
-import com.sg.docker.poc.model.BeneficiaryModel;
+import com.sg.docker.paydock.bean.BeneficiaryBean;
+import com.sg.docker.paydock.model.BeneficiaryModel;
 
 @Service
 @Transactional

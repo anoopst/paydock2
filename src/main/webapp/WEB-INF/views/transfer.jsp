@@ -51,48 +51,30 @@ li a.active {
 	color: white;
 }
 li
-
  
-
 a
-
-
 :hover
-
-
 :not
-
  
-
 (
 .active
-
  
-
 )
 {
 background-color
-
-
 :
-
  
-
 #555
-
-
 ;
+
+	
 color
-
-
 :
-
  
-
 white
-
-
 ;
+
+
 }
 </style>
 		</head>
@@ -107,35 +89,41 @@ white
 			<center>
 				<div>
 					<div>
-						<h1 style="color: grey; font-family: Lucida Sans Unicode;">&nbsp;Beneficiary
-							List</h1>
+						<h1 style="color: grey; font-family: Lucida Sans Unicode;">Transfer funds to other account</h1>
 					</div>
 					<div>
-						<h4 style="color: #dc143c;">&nbsp;List of your local
-							beneficiaries &nbsp;</h4>
+						<h4 style="color: #dc143c;">&nbsp;Please select the beneficiary and enter the amount to transfer amount to beneficiary&nbsp;&nbsp;&nbsp;</h4>
 					</div>
 					<div>
 						<table style="height: 21px;" width="644">
 							<tbody>
 								<tr style="background-color: #5a5a5a; color: white;">
-									<td style="text-align: left;">NAME &nbsp; &nbsp; &nbsp;
-										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-										&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</td>
-									<td style="text-align: left;">ACCOUNT NUMBER</td>
+									<td>Transfer Funds</td>
 								</tr>
-								<tr style="background-color: white; color: black;">
-									<td style="text-align: left;">&nbsp;</td>
-									<td style="text-align: left;">&nbsp;</td>
-								</tr>
-								<c:forEach var="listValue" items="${lists}">
-									<tr>
-										<td>${listValue.name}</td>
-										<td>${listValue.accnum}</td>
-									</tr>
-								</c:forEach>
 							</tbody>
 						</table>
 					</div>
-					<p>&nbsp; &nbsp;</p>
+					<form:form method="post" action="add">
+						<p>
+							&nbsp; &nbsp; <span style="color: #808080;">Account Number</span>&nbsp;
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+							&nbsp; &nbsp;
+							<form:input path="name" />
+							<br /> <br />&nbsp; &nbsp; <span style="color: #808080;">Amount:</span>&nbsp;&nbsp;&nbsp;
+							<form:input path="accnum" />
+							<br /> <br />
+						</p>
+						<div style="text-align: center;">
+							<input style="color: white; background-color: #dc143c;"
+								type="submit" value="Submit" /> <input
+								style="color: black; background-color: #c8c8c8;" type="submit"
+								value="Cancel" />
+						</div>
+						<p>&nbsp;</p>
+						<hr />
+						<p>&nbsp;</p>
+					</form:form>
+				</div>
+			</center>
 		</body>
 		</html>

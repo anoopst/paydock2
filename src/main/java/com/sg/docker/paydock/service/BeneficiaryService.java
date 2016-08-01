@@ -1,12 +1,12 @@
-package com.sg.docker.poc.service;
+package com.sg.docker.paydock.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.sg.docker.poc.bean.BeneficiaryBean;
-import com.sg.docker.poc.dao.BeneficiaryDao;
-import com.sg.docker.poc.model.BeneficiaryModel;
+import com.sg.docker.paydock.bean.BeneficiaryBean;
+import com.sg.docker.paydock.dao.BeneficiaryDao;
+import com.sg.docker.paydock.model.BeneficiaryModel;
 
 public class BeneficiaryService implements IBeneficiaryService {
 

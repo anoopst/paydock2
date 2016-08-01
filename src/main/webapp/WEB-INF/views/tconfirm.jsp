@@ -50,31 +50,10 @@ li a.active {
 	background-color: #dc143c;;
 	color: white;
 }
-li
- 
-a
-:hover
-:not
- 
-(
-.active
- 
-)
-{
-background-color
-:
- 
-#555
-;
 
-	
-color
-:
- 
-white
-;
-
-
+li a:hover:not (.active ) {
+	background-color: #555;
+	color: white;
 }
 </style>
 		</head>
@@ -86,44 +65,10 @@ white
   				  <li><a href="<spring:url value="add"/>">Add Beneficiary</a></li>
   				<li><a href="<spring:url value="list"/>">List Beneficiary</a></li>
 			</ul>
-			<center>
-				<div>
-					<div>
-						<h1 style="color: grey; font-family: Lucida Sans Unicode;">Transfer funds to other account</h1>
+			<center>	
+		<div>
+						<h1 style="color: grey; font-family: Lucida Sans Unicode;">Fund Transferred successfully</h1>
 					</div>
-					<div>
-						<h4 style="color: #dc143c;">&nbsp;Please select the beneficiary and enter the amount to transfer amount to beneficiary&nbsp;&nbsp;&nbsp;</h4>
-					</div>
-					<div>
-						<table style="height: 21px;" width="644">
-							<tbody>
-								<tr style="background-color: #5a5a5a; color: white;">
-									<td>Transfer Funds</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<form:form method="post" action="transfer" modelAttribute="transfer">
-						<p>
-							&nbsp; &nbsp; <span style="color: #808080;">Account Number</span>&nbsp;
-							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-							&nbsp; &nbsp;
-							<form:select path="benId" items="${beneficiaries}" itemValue="accnum" itemLabel="name" />
-							<br /> <br />&nbsp; &nbsp; <span style="color: #808080;">Amount:</span>&nbsp;&nbsp;&nbsp;
-							<form:input path="amt" />
-							<br /> <br />
-						</p>
-						<div style="text-align: center;">
-							<input style="color: white; background-color: #dc143c;"
-								type="submit" value="Submit" /> <input
-								style="color: black; background-color: #c8c8c8;" type="submit"
-								value="Cancel" />
-						</div>
-						<p>&nbsp;</p>
-						<hr />
-						<p>&nbsp;</p>
-					</form:form>
-				</div>
-			</center>
-		</body>
-		</html>
+	</center>
+</body>
+</html>

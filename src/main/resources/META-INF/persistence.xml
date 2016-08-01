@@ -10,7 +10,7 @@ http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
 		<properties>
 			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
 			<property name="hibernate.connection.url"
-				value="jdbc:mysql://192.168.99.100:3306?paydock" />
+				value="jdbc:mysql://mysqldb:3306?paydock" />
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLInnoDBDialect" />		
 			<property name="hibernate.show_sql" value="true" />			
 		</properties>
